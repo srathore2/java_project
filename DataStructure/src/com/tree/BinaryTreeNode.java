@@ -1,6 +1,6 @@
 package com.tree;
 
-public class BinaryTreeNode {
+public class BinaryTreeNode implements Comparable<BinaryTreeNode> {
 private int data;
 private BinaryTreeNode left;
 private BinaryTreeNode right;
@@ -28,6 +28,11 @@ public BinaryTreeNode getRight() {
 }
 public void setRight(BinaryTreeNode right) {
 	this.right = right;
+}
+@Override
+public int compareTo(BinaryTreeNode arg0) {
+	// TODO Auto-generated method stub
+	return 0;
 }
 
 
